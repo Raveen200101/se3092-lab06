@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data />
+
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/ScreenContent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ScreenTitle"
+            android:text="@string/transfer_funds" />
+
+        <TextView
+            style="@style/ScreenDescription"
+            android:text="@string/transfer_description" />
+
+        <TextView
+            style="@style/FieldLabel"
+            android:labelFor="@id/etRecipientAccount"
+            android:text="@string/recipient_account" />
+
+        <EditText
+            android:id="@+id/etRecipientAccount"
+            style="@style/TransferField"
+            android:inputType="number"
+            android:maxLength="34"
+            android:importantForAutofill="no" />
+
+        <TextView
+            style="@style/FieldLabel"
+            android:labelFor="@id/etRecipientName"
+            android:text="@string/recipient_name" />
+
+        <EditText
+            android:id="@+id/etRecipientName"
+            style="@style/TransferField"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="120"
+            android:importantForAutofill="no" />
+
+        <TextView
+            style="@style/FieldLabel"
+            android:labelFor="@id/etAmount"
+            android:text="@string/amount_label" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            style="@style/TransferField"
+            android:inputType="numberDecimal"
+            android:maxLength="18"
+            android:importantForAutofill="no" />
+
+        <TextView
+            style="@style/FieldLabel"
+            android:labelFor="@id/etRemarks"
+            android:text="@string/remarks_optional" />
+
+        <EditText
+            android:id="@+id/etRemarks"
+            style="@style/TransferField"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2"
+            android:maxLength="240"
+            android:maxLines="4"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/PrimaryAction"
+            android:text="@string/review_transfer" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/SecondaryAction"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</ScrollView>
+</layout>

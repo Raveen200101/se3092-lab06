@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Transfer Ledger</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="available_balance">Sample balance</string>
+    <string name="demo_balance">LKR 125,000.00</string>
+    <string name="transfer_funds">Transfer funds</string>
+    <string name="transfer_history">Transfer history</string>
+    <string name="transfer_description">Enter the recipient and amount to prepare a transfer.</string>
+    <string name="recipient_account">Recipient account number</string>
+    <string name="recipient_name">Recipient name</string>
+    <string name="amount_label">Amount (LKR)</string>
+    <string name="remarks_optional">Remarks (optional)</string>
+    <string name="review_transfer">Review transfer</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_transfer">Confirm transfer</string>
+    <string name="confirmation_description">Review the details before confirming.</string>
+    <string name="recipient">Recipient</string>
+    <string name="remarks">Remarks</string>
+    <string name="edit_transfer">Edit transfer</string>
+    <string name="recipient_details">%1$s (%2$s)</string>
+    <string name="lkr_amount">LKR %1$,.2f</string>
+    <string name="no_remarks">No remarks</string>
+    <string name="account_required">Enter a recipient account number</string>
+    <string name="name_required">Enter a recipient name</string>
+    <string name="amount_invalid">Enter a valid amount greater than 0</string>
+    <string name="transfer_submitted">Transfer submitted</string>
+    <string name="save_error">Could not save the transfer. Please try again.</string>
+    <string name="loading_history">Loading transfers…</string>
+    <string name="history_error">Could not load transfer history.</string>
+    <string name="empty_history">No transfers yet</string>
+    <string name="session_reminder_channel">Session Reminders</string>
+    <string name="session_reminder_channel_description">Warns you before your banking session times out</string>
+    <string name="session_reminder_title">Session expiring soon</string>
+    <string name="session_reminder_message">You will be signed out soon due to inactivity.</string>
+</resources>

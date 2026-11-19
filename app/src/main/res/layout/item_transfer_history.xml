@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SurfaceCard"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+            style="@style/DetailText"
+            android:id="@+id/tvHistoryName" />
+
+    <TextView
+            android:id="@+id/tvHistoryAmount"
+            style="@style/DetailText"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/accent" />
+
+    <TextView
+            android:id="@+id/tvHistoryRemarks"
+            style="@style/BodyText"
+            android:layout_marginTop="4dp" />
+</LinearLayout>

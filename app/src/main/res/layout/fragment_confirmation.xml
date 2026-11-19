@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/ScreenContent"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            style="@style/ScreenTitle"
+            android:text="@string/confirm_transfer" />
+
+        <TextView
+            style="@style/ScreenDescription"
+            android:text="@string/confirmation_description" />
+
+        <LinearLayout
+            style="@style/SurfaceCard"
+            android:layout_marginTop="24dp">
+
+            <TextView
+            style="@style/DetailLabel"
+            android:text="@string/recipient" />
+
+            <TextView
+            style="@style/DetailText"
+            android:id="@+id/tvConfirmRecipient" />
+
+            <TextView
+            style="@style/FieldLabel"
+            android:text="@string/amount_label" />
+
+            <TextView
+            style="@style/DetailText"
+            android:id="@+id/tvConfirmAmount" />
+
+            <TextView
+            style="@style/FieldLabel"
+            android:text="@string/remarks" />
+
+            <TextView
+            style="@style/DetailText"
+            android:id="@+id/tvConfirmRemarks" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSaveError"
+            style="@style/ScreenDescription"
+            android:accessibilityLiveRegion="polite"
+            android:text="@string/save_error"
+            android:textColor="@color/error_text"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            style="@style/PrimaryAction"
+            android:text="@string/confirm_transfer" />
+
+        <Button
+            android:id="@+id/btnEditTransfer"
+            style="@style/SecondaryAction"
+            android:text="@string/edit_transfer" />
+    </LinearLayout>
+</ScrollView>
